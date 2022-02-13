@@ -1,0 +1,238 @@
+:root{
+    --main-white: #f0f0f0;
+    --main-green: #00994C;
+    --main-dark-pink: #d90429;
+    --main-dark-pink: #660033;
+    --main-dark-gray: #202020;
+    --main-gray: #303841;
+    --main-blue: #45567d;
+    --main-cyan: #007575;
+  }          
+  
+  body{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  /* NAVBAR */
+  
+  .navbar-container{
+    background-color: var(--main-dark-pink);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    font-family: sans-serif, 'Roboto Condensed';
+  }
+  
+  .nav-list a {
+    font-size: 1.3em;
+    padding: 0.8em;
+  }
+  
+  .nav-list a:hover{
+    background: var(--main-cyan);
+  }
+  
+            /* WELCOME SECTION */
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: var(--main-dark-pink);
+  }
+
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    color: var(--main-white);
+    transition: ease all .4s;
+  }
+  
+  #welcome-section{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-dark-gray);
+  }
+  
+  #welcome-section > p{
+    font-family: Railway;
+    font-weight: 900;
+    font-size: 2.5em;
+    color: var(--main-dark-pink);
+    transition: ease all .4s;
+  }
+  
+                /* PROJECTS SECTION */
+  
+  .projects-section{
+    background: var(--main-cyan);
+    text-align: center;
+  }
+  
+  .projects-section-header{
+    max-width: 700px;
+    font-size: 2.5em;
+    margin: 0 auto 2em auto;
+    padding-top: 3em;
+    border-bottom: 0.08em solid var(--main-white);
+  }
+
+  h2{
+    font-size: 2.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    color: var(--main-white);
+    transition: ease all .4s;
+  }
+
+  .card-body{
+    background-color: #303841;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+
+  .project-title{
+    background-color: var(--main-gray);
+    color: white;
+    font-size: 1.2em;
+    font-family: Raleway;
+  }
+
+  .project-radius{
+    border-radius: 30px;
+  }
+
+  /* .projects-style{
+    transition: ease all .4s;
+  } */
+
+  .projects-container{
+    transition: ease all .4s;
+  }
+
+  
+    
+  /* CONTACT SECTION */
+    
+    #contact{
+      height: 100vh;
+      width: 100%;
+      background: var(--main-dark-gray);
+    }
+
+    .btn-styling{
+      padding-top: 2em;
+      font-size: 2em;
+      transition: transform 0.3s ease-out;
+      transition: ease all .4s;
+    }
+
+    .btn-styling:hover{
+      transform: translateY(8px);
+    }
+
+  /* MEDIA QUERIES */
+
+  @media(max-width: 595px) {
+    /* ABOUT SECTION */
+    h1{
+      font-size: 3em;
+    }
+    #welcome-section > p{
+      font-size: 1.5em;
+    }
+    /* PROJECTS SECTION */
+
+    .projects-section > h2{
+      font-size: 1.7em;
+    }
+
+    .project-style{
+      padding-top: 3em;
+    }
+
+    .project-title{
+      font-size: 1.1em;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section > h1{
+      font-size: 2.5em;
+    }
+
+    .btn-styling{
+      font-size: 1.4em;
+    }
+  }
+
+  @media (min-width: 595px) and (max-width: 768px) {
+    /* ABOUT SECTION */
+    h1{
+      font-size: 4em;
+    }
+    #welcome-section > p{
+      font-size: 2em;
+    }
+    /* PROJECTS SECTION */
+
+    .projects-section > h2{
+      font-size: 2em;
+    }
+
+    .project-style{
+      padding-bottom: 2em;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section > h1{
+      font-size: 3em;
+    }
+
+    .btn-styling{
+      font-size: 1.5em;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 992px){
+    /* PROJECT SECTION */
+    
+    .project-style{
+      padding-bottom: 2.5em;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section > h1{
+      font-size: 3.3em;
+    }
+
+    .btn-styling{
+      font-size: 2em;
+    }
+  }
+
+  @media(min-width: 992px) and (max-width: 1400px){
+    .projects-container{
+      min-width: 975px;
+    }
+    .project-style{
+      width: 700px;
+      padding-top: 2em;
+    }
+  }
+
+@media(min-width: 1400px){
+    .projects-container{
+       min-width: 1390px; 
+    }
+  }
+
+/* @media(min-width: 1405px) and (max-height: 800px){
+  #projects{
+    height: 1000px;
+  }
+} */
+      
+
+
+
+  
